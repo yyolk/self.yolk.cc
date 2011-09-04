@@ -213,9 +213,9 @@ td { vertical-align: top; }
    ========================================================================== */
 
 
-@import url('screen.css');
-@import url('ie.css');
-@import url('print.css');
+/* h5bp-import: screen.css */
+/* h5bp-import: ie.css */
+/* h5bp-import: print.css */
 
 
 
