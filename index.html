@@ -11,7 +11,7 @@ layout: default
             
             {% for post in site.posts %}
             {% case post.layout %}
-                    {% when 'col' %}
+                    {% when 'col1' %}
                     <div class="box col" onClick="location.href='{{ post.url }}';">
                         <div class='stretch'>
                             {{ post.title }}
@@ -30,11 +30,15 @@ layout: default
                         </div>
                     </div>
                     {% else %}
-                    <div class="box" onClick="location.href='{{ post.url }}';">
+                    <div class="box {% cycle 'col1', 'col2', 'col3' %}" onClick="location.href='{{ post.url }}';">
                         <div class='stretch'>
                             {{ post.title }}
                             <div class="summary">
+                                {% if post.subtitle == null %}
                                 {{ post.content | summarize }}
+                                {% else %}
+                                {{ post.subtitle }}
+                                {% endif %}
                             </div>
                         </div>
                     </div>

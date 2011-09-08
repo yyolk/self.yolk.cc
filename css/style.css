@@ -98,7 +98,7 @@ a:visited {
 
 /* line 56, ../sass/style.scss */
 a:hover {
-  color: #030408 !important;
+  color: #2d3c77 !important;
 }
 
 /* line 57, ../sass/style.scss */
@@ -416,20 +416,40 @@ body {
 
 /* line 233, ../sass/style.scss */
 header, footer {
-  font-size: 50px !important;
   text-align: center !important;
   margin: 60px 0 !important;
   text-shadow: rgba(255, 255, 255, 0.9) 2px 2px 2px;
 }
 
-/* line 240, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
+header {
+  font-size: 50px !important;
+}
+
+/* line 242, ../sass/style.scss */
+footer {
+  font-size: 17px !important;
+}
+
+/* line 246, ../sass/style.scss */
 .box {
   float: left;
   cursor: pointer;
 }
 
+/* line 253, ../sass/style.scss */
+.box:hover .col1, .box:hover .col2, .box:hover .col3 {
+  background-color: #b9e1e4;
+  border: 4px solid #fcfefe;
+}
+/* line 258, ../sass/style.scss */
+.box:hover .stretch {
+  background-color: #11172d;
+  border: 4px solid #0e3242;
+}
+
 /* Add stretch */
-/* line 246, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .col1, .col2, .col3 {
   margin: 1em 0 0 1em;
   background-color: #1E4A4D;
@@ -445,25 +465,25 @@ header, footer {
   color: #fff;
 }
 
-/* line 256, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 .col1 {
   width: 300px;
   height: 210px;
 }
 
-/* line 261, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 .col2 {
   width: 370px;
   height: 240px;
 }
 
-/* line 266, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 .col3 {
   width: 420px;
   height: 400px;
 }
 
-/* line 271, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .stretch {
   position: absolute;
   top: 4px;
@@ -481,7 +501,7 @@ header, footer {
   padding: 2em;
 }
 
-/* line 279, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .summary {
   font-size: 12px;
 }
@@ -501,7 +521,7 @@ header, footer {
    Please define your styles before this section.
    ========================================================================== */
 /* For image replacement */
-/* line 312, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .ir {
   display: block;
   border: 0;
@@ -513,20 +533,20 @@ header, footer {
   direction: ltr;
 }
 
-/* line 313, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 .ir br {
   display: none;
 }
 
 /* Hide from both screenreaders and browsers: h5bp.com/u */
-/* line 316, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .hidden {
   display: none !important;
   visibility: hidden;
 }
 
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v */
-/* line 319, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -539,7 +559,7 @@ header, footer {
 }
 
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-/* line 322, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
@@ -550,24 +570,24 @@ header, footer {
 }
 
 /* Hide visually and from screenreaders, but maintain layout */
-/* line 325, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 .invisible {
   visibility: hidden;
 }
 
 /* Contain floats: h5bp.com/q */
-/* line 328, ../sass/style.scss */
+/* line 349, ../sass/style.scss */
 .clearfix:before, .clearfix:after {
   content: "";
   display: table;
 }
 
-/* line 329, ../sass/style.scss */
+/* line 350, ../sass/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 330, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -577,7 +597,7 @@ header, footer {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 340, ../sass/style.scss */
+  /* line 361, ../sass/style.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -587,45 +607,45 @@ header, footer {
   }
 
   /* Black prints faster: h5bp.com/s */
-  /* line 341, ../sass/style.scss */
+  /* line 362, ../sass/style.scss */
   a, a:visited {
     text-decoration: underline;
   }
 
-  /* line 342, ../sass/style.scss */
+  /* line 363, ../sass/style.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-  /* line 343, ../sass/style.scss */
+  /* line 364, ../sass/style.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
 
-  /* line 344, ../sass/style.scss */
+  /* line 365, ../sass/style.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: "";
   }
 
   /* Don't show links for images, or javascript/internal links */
-  /* line 345, ../sass/style.scss */
+  /* line 366, ../sass/style.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-  /* line 346, ../sass/style.scss */
+  /* line 367, ../sass/style.scss */
   thead {
     display: table-header-group;
   }
 
   /* h5bp.com/t */
-  /* line 347, ../sass/style.scss */
+  /* line 368, ../sass/style.scss */
   tr, img {
     page-break-inside: avoid;
   }
 
-  /* line 348, ../sass/style.scss */
+  /* line 369, ../sass/style.scss */
   img {
     max-width: 100% !important;
   }
@@ -634,13 +654,13 @@ header, footer {
     margin: 0.5cm;
 }
 
-  /* line 350, ../sass/style.scss */
+  /* line 371, ../sass/style.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3;
   }
 
-  /* line 351, ../sass/style.scss */
+  /* line 372, ../sass/style.scss */
   h2, h3 {
     page-break-after: avoid;
   }

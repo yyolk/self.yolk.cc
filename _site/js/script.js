@@ -2,18 +2,6 @@
 Joseph Chiocchi
 */
 
-var col = 1;
-
-$(function(){
-    $('.box').each(function(){
-        $(this).addClass(function(i){
-            if (++col > 3) col = 1;
-            return 'col'+col;
-        });
-    });
-
-});
-
 
 $(function(){
     var $container = $("#masonry");
@@ -36,7 +24,4 @@ $(function(){
         });
     }).resize();
 });
-
-
-
 

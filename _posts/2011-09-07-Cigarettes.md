@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Cigarettes"
+subtitle: "How many cigs I've smoked."
 ---
 
 ###How many cigarettes I've smoked.
