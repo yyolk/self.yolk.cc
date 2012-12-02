@@ -1,3 +1,2 @@
-# source for self.yolk.cc
-
-built using [jekyll](http://jekyllrb.com)
+Source for self.yolk.cc
+---
